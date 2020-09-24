@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1020741863999",
+    "firebase_url": "https://sunhacksnov2018.firebaseio.com",
+    "project_id": "sunhacksnov2018",
+    "storage_bucket": "sunhacksnov2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020741863999:android:073f239acc3cc646",
+        "android_client_info": {
+          "package_name": "com.example.kyl3g.sunhacksnov2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020741863999-jt5fcc32pet35tnopm23b1kqngbjcsit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kyl3g.sunhacksnov2018",
+            "certificate_hash": "625ce20dfc482ffa24219adc039e2f778638c485"
+          }
+        },
+        {
+          "client_id": "1020741863999-seplp22c2rc67528h87qj1l6c1bnuec3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kyl3g.sunhacksnov2018",
+            "certificate_hash": "9e9b485f78ca76ccaf6047833d2c83860f4d1bdf"
+          }
+        },
+        {
+          "client_id": "1020741863999-uc6j1ahuk8rh3tk1ljm3oljia8jn37k0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5JZmSlrb0387ahDhXXNi0lsTDnimG_dU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020741863999-uc6j1ahuk8rh3tk1ljm3oljia8jn37k0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

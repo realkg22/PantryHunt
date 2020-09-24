@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/step2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigationBar">
+
+        <TextView
+            android:id="@+id/tvSearchStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Step 2"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvFilterResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter your Results"
+            android:layout_below="@+id/tvSearchStep2"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/maxGroceriesLayout"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tvFilterResults"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tvMaxPlaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maximum grocery stores to visit"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="8dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerNumGroceries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvMaxPlaces"
+                android:layout_marginLeft="5dp"
+                >
+
+
+            </Spinner>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvFilterBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prioritize results by..."
+            android:layout_below="@+id/maxGroceriesLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            />
+        
+        <RadioGroup
+            android:id="@+id/radioButtons"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvFilterBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            
+            <RadioButton
+                android:id="@+id/radioDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/radioPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="18dp"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginTop="10dp"/>
+            
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/radioButtons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/holo_red_light"
+            android:text="Next"
+            android:textColor="@color/white"/>
+
+
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@android:color/holo_red_light"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation">
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

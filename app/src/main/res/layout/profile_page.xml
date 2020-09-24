@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigationBar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            app:civ_border_width="3dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_action_name"
+            app:civ_border_color="@color/holo_red_light"
+            android:layout_marginTop="30dp"
+
+            />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User's name"
+            android:layout_below="@id/profilePic"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@android:color/holo_red_light"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation">
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

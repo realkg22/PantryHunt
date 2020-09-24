@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterLogin.OpeningPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewSwitcher
+            android:id="@+id/switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:inAnimation="@anim/anim_fadein">
+
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/pantryhuntlogo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+        </ViewSwitcher>
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switcher"
+            android:hint="Email address"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawableTint="@color/gray"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="5dp"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailInput"
+            android:hint="Password"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawableTint="@color/gray"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="5dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordInput"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/holo_red_light"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginBtn"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/holo_red_light"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
